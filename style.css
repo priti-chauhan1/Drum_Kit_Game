@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #5b5b5b);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+
+  .drum-kit {
+    background-color: #333;
+    padding: 10px;
+    margin: 20px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 150%;
+   
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: hsl(48, 100%, 50%);
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    font-weight: 15rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: hwb(0 99% 0%);
+    font-weight: bold;
+  }
+  
+  .drum-pad-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 13px;
+  }
+  
+  .drum-pad {
+    background: radial-gradient(circle, #555, #222);
+    border: none;
+    border-radius: 60%;
+    width: 70px;
+    height: 80px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .drum-pad:hover {
+    transform: scale(1.1);
+    background: radial-gradient(circle, #ff9900, #cc6600);
+  }
+  
+  .drum-pad:active {
+    background: radial-gradient(circle, #ff6600, #993300);
+    transform: scale(0.95);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .drum-pad {
+      width: 60px;
+      height: 60px;
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .drum-pad {
+      width: 50px;
+      height: 50px;
+      font-size: 1rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
+  
